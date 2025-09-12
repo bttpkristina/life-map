@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>The Life Map</title>
+</head>
+
+<body>
+
+    <div class="flex flex-row mt-10 mx-auto">
+
+        <div id="contents" class="">
+            <div class="relative w-[600px] h-[450px]  mx-auto">
+
+                <img src="images/lm4_unique_abilities.png" alt="" id="img_lm4_unique_abilities"
+                    class=" absolute z-0 w-[430px] h-[425px] top-[7px] left-[80px] hover:cursor-pointer">
+                <img src="images/lm2_limited_resources.png" alt="" id="img_lm2_limited_resources"
+                    class=" absolute z-3 w-[373px] h-[373px] top-[35px] left-[111px] hover:cursor-pointer">
+                <img src="images/lm6_obligations.png" alt="" id="img_lm6_obligations"
+                    class=" absolute z-7 w-[300px] h-[245px] top-[100px] left-[147px] hover:cursor-pointer">
+                <img src="images/lm3_manifestations.png" alt="" id="img_lm3_manifestations"
+                    class=" absolute z-6 w-[129px] h-[129px] top-[156px] left-[232px] hover:cursor-pointer">
+                <img src="images/lm5_agreements.png" alt="" id="img_lm5_agreements"
+                    class=" absolute z-5 w-[209px] h-[209px] top-[113px] left-[198px] hover:cursor-pointer">
+                <img src="images/lm1_gifts.png" alt="" id="img_lm1_gifts"
+                    class="absolute z-4 w-[248px] h-[248px] top-[97px] left-[172px] hover:cursor-pointer">
+
+
+
+                <!-- <img src="images/lm7_satisfactions.png" alt="" id="img_manifestations" class=" absolute z-6">
+                <img src="images/lm8_states_of_emo_being.png" alt="" id="img_manifestations" class=" absolute z-7">
+                <img src="images/lm9_sources_of_knowledge.png" alt="" id="img_manifestations" class=" absolute z-8">
+                <img src="images/lm10_elements_of psyche.png" alt="" id="img_manifestations" class=" absolute z-9">
+                <img src="images/lm11_intuitive_identity.png" alt="" id="img_manifestations" class=" absolute z-10">
+                <img src="images/lm12_karmic.png" alt="" id="img_manifestations" class=" absolute z-11">
+                <img src="images/lm13_decision_making.png" alt="" id="img_manifestations" class=" absolute z-12"> -->
+
+                <!-- <img src="images/" alt="" id="img_manifestations" class="hidden absolute z-13"> -->
+            </div>
+
+            <div class="w-[500px]">
+
+                <div id="txt_lm3_manifestations" class="hidden">
+                    <p>lm3_manifestations</p>
+                </div>
+
+                <div id="txt_lm5_agreements" class="hidden">
+                    <p>lm5_agreements</p>
+                </div>
+
+                <div id="txt_lm1_gifts" class="hidden">
+                    <p>lm1_gifts</p>
+                </div>
+
+                <div id="txt_lm2_limited_resources" class="hidden">
+                    <p>lm2_limited_resources</p>
+                </div>
+
+                <div id="txt_lm6_obligations" class="hidden">
+                    <p>lm6_obligations</p>
+                </div>
+
+                <div id="txt_lm4_unique_abilities" class="hidden">
+                    <p>lm4_unique_abilities</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+
+            $('#img_lm3_manifestations').on('click', function () {
+                $('#txt_lm3_manifestations').toggleClass('block hidden');
+            });
+
+            $('#img_lm5_agreements').on('click', function () {
+                $('#txt_lm5_agreements').toggleClass('hidden');
+            });
+
+            $('#img_lm1_gifts').on('click', function () {
+                $('#txt_lm1_gifts').toggleClass('block hidden');
+            });
+
+            $('#img_lm2_limited_resources').on('click', function () {
+                $('#txt_lm2_limited_resources').toggleClass('hidden');
+            });
+
+            $('#img_lm6_obligations').on('click', function () {
+                $('#txt_lm6_obligations').toggleClass('hidden');
+            });
+
+            $('#img_lm4_unique_abilities').on('click', function () {
+                $('#txt_lm4_unique_abilities').toggleClass('hidden');
+            });
+
+        });
+    </script>
+</body>
+
+</html>
