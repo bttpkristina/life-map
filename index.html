@@ -169,10 +169,12 @@
                     <hr>
                     <br>
                     <p><span class="font-bold italic">1. Our Physical Gift</span></p>
-                    <p class="text-justify">Our physical gift is more than just a body that moves us from place to place—it is what has
+                    <p class="text-justify">Our physical gift is more than just a body that moves us from place to
+                        place—it is what has
                         allowed humans to thrive across every continent and survive on almost any diet.</p>
                     <br>
-                    <p class="text-justify">This gift exposed us to our first choices, permitting us to ask ourselves where we would like to
+                    <p class="text-justify">This gift exposed us to our first choices, permitting us to ask ourselves
+                        where we would like to
                         live and what we would like to eat.</p>
                     <br>
                     <p>Unlike other animals who respond to environmental pressures through instinct and learned
@@ -344,43 +346,192 @@
     <script>
         $(function () {
 
+            function closeallbut(get_text_id) {
+
+
+                switch (get_text_id) {
+                    case 'txt_lm1_gifts':
+
+                        if ($('#txt_lm2_limited_resources').hasClass("hidden") != true) {
+                            $('#txt_lm2_limited_resources').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm3_manifestations').hasClass("hidden") != true) {
+                            $('#txt_lm3_manifestations').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm4_unique_abilities').hasClass("hidden") != true) {
+                            $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm5_agreements').hasClass("hidden") != true) {
+                            $('#txt_lm5_agreements').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm6_obligations').hasClass("hidden") != true) {
+                            $('#txt_lm6_obligations').toggleClass('block hidden');
+                        }
+
+                        break;
+
+                    case 'txt_lm2_limited_resources':
+
+                        if ($('#txt_lm1_gifts').hasClass("hidden") != true) {
+                            $('#txt_lm1_gifts').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm3_manifestations').hasClass("hidden") != true) {
+                            $('#txt_lm3_manifestations').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm4_unique_abilities').hasClass("hidden") != true) {
+                            $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm5_agreements').hasClass("hidden") != true) {
+                            $('#txt_lm5_agreements').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm6_obligations').hasClass("hidden") != true) {
+                            $('#txt_lm6_obligations').toggleClass('block hidden');
+                        }
+
+                        break;
+
+                    case 'txt_lm3_manifestations':
+
+                        if ($('#txt_lm1_gifts').hasClass("hidden") != true) {
+                            $('#txt_lm1_gifts').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm2_limited_resources').hasClass("hidden") != true) {
+                            $('#txt_lm2_limited_resources').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm4_unique_abilities').hasClass("hidden") != true) {
+                            $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm5_agreements').hasClass("hidden") != true) {
+                            $('#txt_lm5_agreements').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm6_obligations').hasClass("hidden") != true) {
+                            $('#txt_lm6_obligations').toggleClass('block hidden');
+                        }
+
+                        break;
+                    case 'txt_lm4_unique_abilities':
+
+
+                        if ($('#txt_lm1_gifts').hasClass("hidden") != true) {
+                            $('#txt_lm1_gifts').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm2_limited_resources').hasClass("hidden") != true) {
+                            $('#txt_lm2_limited_resources').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm3_manifestations').hasClass("hidden") != true) {
+                            $('#txt_lm3_manifestations').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm5_agreements').hasClass("hidden") != true) {
+                            $('#txt_lm5_agreements').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm6_obligations').hasClass("hidden") != true) {
+                            $('#txt_lm6_obligations').toggleClass('block hidden');
+                        }
+
+
+                        break;
+                    case 'txt_lm5_agreements':
+
+                        if ($('#txt_lm1_gifts').hasClass("hidden") != true) {
+                            $('#txt_lm1_gifts').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm2_limited_resources').hasClass("hidden") != true) {
+                            $('#txt_lm2_limited_resources').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm3_manifestations').hasClass("hidden") != true) {
+                            $('#txt_lm3_manifestations').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm4_unique_abilities').hasClass("hidden") != true) {
+                            $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm6_obligations').hasClass("hidden") != true) {
+                            $('#txt_lm6_obligations').toggleClass('block hidden');
+                        }
+
+
+                        break;
+                    case 'txt_lm6_obligations':
+
+                        if ($('#txt_lm1_gifts').hasClass("hidden") != true) {
+                            $('#txt_lm1_gifts').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm2_limited_resources').hasClass("hidden") != true) {
+                            $('#txt_lm2_limited_resources').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm3_manifestations').hasClass("hidden") != true) {
+                            $('#txt_lm3_manifestations').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm4_unique_abilities').hasClass("hidden") != true) {
+                            $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+                        }
+
+                        if ($('#txt_lm5_agreements').hasClass("hidden") != true) {
+                            $('#txt_lm5_agreements').toggleClass('block hidden');
+                        }
+
+                        break;
+                }
+
+            }
+
             $('#img_lm3_manifestations').on('click', function () {
                 $('#txt_lm3_manifestations').toggleClass('block hidden');
-                // $('#txt_lm1_gifts').toggleClass('hidden');
 
-                // $('#myElement').data('role');
-                // let check_class = $('#txt_lm5_agreements').attr('class');
-
-                // console.log(check_class);
-
-
-
-                // $('#txt_lm5_agreements').toggleClass('hidden');
-                // $('#txt_lm1_gifts').toggleClass('hidden');
-                // $('#txt_lm2_limited_resources').toggleClass('hidden');
-                // $('#txt_lm6_obligations').toggleClass('hidden');
-                // $('#txt_lm4_unique_abilities').toggleClass('hidden');
+                closeallbut('txt_lm3_manifestations');
 
             });
 
             $('#img_lm5_agreements').on('click', function () {
                 $('#txt_lm5_agreements').toggleClass('block hidden');
+
+                closeallbut('txt_lm5_agreements');
             });
 
             $('#img_lm1_gifts').on('click', function () {
                 $('#txt_lm1_gifts').toggleClass('block hidden');
+
+                closeallbut('txt_lm1_gifts');
             });
 
             $('#img_lm2_limited_resources').on('click', function () {
                 $('#txt_lm2_limited_resources').toggleClass('block hidden');
+
+                closeallbut('txt_lm2_limited_resources');
             });
 
             $('#img_lm6_obligations').on('click', function () {
                 $('#txt_lm6_obligations').toggleClass('block hidden');
+
+                closeallbut('txt_lm6_obligations');
             });
 
             $('#img_lm4_unique_abilities').on('click', function () {
                 $('#txt_lm4_unique_abilities').toggleClass('block hidden');
+
+                closeallbut('txt_lm4_unique_abilities');
             });
 
         });
