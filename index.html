@@ -28,6 +28,8 @@
 
 <body>
 
+    
+
     <div class="max-w-[1366px] mt-10 mx-auto max-h-screen">
 
         <div class="flex flex-row ">
@@ -37,7 +39,7 @@
                 <div class="relative w-[600px] h-[600px]  mx-auto">
 
                     <img src="images/lm4_unique_abilities.png" alt="" id="img_lm4_unique_abilities"
-                        class=" absolute z-0 w-[600px] h-[600px] top-[15px] left-[15px]   rounded-full hover:cursor-pointer">
+                        class=" absolute z-15 w-[600px] h-[600px] top-[15px] left-[15px]   rounded-full hover:cursor-pointer">
 
                     <img src="images/lm2_limited_resources.png" alt="" id="img_lm2_limited_resources"
                         class=" absolute z-14 w-[520px] h-[520px] top-[55px] left-[55px]  rounded-full hover:cursor-pointer">
@@ -63,6 +65,32 @@
                     <img src="images/lm13_decision_making.png" alt="" id="img_manifestations" class=" absolute z-12"> -->
 
                     <!-- <img src="images/" alt="" id="img_manifestations" class="hidden absolute z-13"> -->
+
+                    <div class="absolute z-16">
+                        <div class="fixed max-h-full inset-0 bg-black bg-opacity-80 justify-center items-center hidden" id="toolbox-modal">
+
+                            <div class="w-4/5 bg-gray-200 text-gray-800 rounded shadow-xl">
+                                
+                                <div id="modal-title" class="py-4 px-5 xs:px-3 xs:mt-6 flex justify-between items-center text-3xl font-bold xs:text-base sm:text-base text-gray-800 border-b-1 border-gray-400">
+                                    <div id="detail-title">
+                                        <label class="relative flex-1 flex flex-row">
+                                            <img src="images/ToolBox.png" alt="">
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="p-5 min-h-full">
+                                    <div id="details"></div>
+                                </div>
+                                
+                                <div class="mt-3 py-4 px-5 xs:px-3 flex justify-end space-x-3">
+                                    <button type="button" name="btn-close" id="btn-close" class="btn-close px-3 py-1 bg-red-200 font-semibold shadow-lg rounded text-white hover:cursor-pointer hover:border-secondary hover:bg-secondary focus:outline-none">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="w-[720px] h-[800px] overflow-y-auto ml-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0">
@@ -296,7 +324,7 @@
                         <ul class="ml-10">
                             <li class="list-disc">Physically, we honor our bodies by resting, nourishing, and challenging them with care.</li>
                             <li class="list-disc">Emotionally, we honor our relationships—beginning with ourselves, then extending to family, friends, and society—through sincerity and kindness.</li>
-                            <li class="list-disc">Spiritually, we honor our inner guidance—our Toolbox for a Joyful Life—by trusting and acknowledging the wisdom always available to us.</li>
+                            <li class="list-disc">Spiritually, we honor our inner guidance—our <button id="toolboxforajoyfullife">Toolbox for a Joyful Life</button> —by trusting and acknowledging the wisdom always available to us.</li>
                         </ul>
                         <br>
                         <p>To honor others is to see their worth. To honor life is to approach each moment with respect, humility, and care.</p>
@@ -434,7 +462,16 @@
 
             </div>
         </div>
+
+        
+        
+        
+
     </div>
+
+    
+    
+    
     
 
     <script>
@@ -628,8 +665,22 @@
                 closeallbut('txt_lm4_unique_abilities');
             });
 
+
+            $('#toolboxforajoyfullife').on('click', function () {
+                $('#toolbox-modal').toggleClass('hidden flex');
+            });
+
+            $('#btn-close').on('click', function () {
+                $('#toolbox-modal').toggleClass('flex hidden');
+            });
+
+            
+            
+
         });
     </script>
+
+    
 </body>
 
 </html>
