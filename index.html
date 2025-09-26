@@ -119,7 +119,7 @@
 
                 </div>
 
-                <div class="w-[720px] h-[800px] overflow-y-auto ml-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0">
+                <div class="w-[720px] h-[800px] overflow-y-auto ml-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0" id="map_text">
 
                     <div id="txt_lm3_manifestations" data-holder="lm3_manifestations" class="text_holder hidden mr-10">
                         <p><span class="font-bold text-3xl">MANIFESTATIONS</span></p>
@@ -764,11 +764,14 @@
             $('#toolboxforajoyfullife').on('click', function () {
                 $('#toolbox-modal').toggleClass('hidden flex');
                 $('#map').toggleClass('flex hidden');
+                $('#map_text').toggleClass('flex hidden');
+                
             });
 
             $('#btn-close').on('click', function () {
                 $('#toolbox-modal').toggleClass('flex hidden');
                 $('#map').toggleClass('hidden flex');
+                $('#map_text').toggleClass('hidden flex');
             });
 
         });
