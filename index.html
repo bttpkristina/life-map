@@ -28,13 +28,20 @@
 
 <body>
 
+
+
     <div class="max-w-[1366px] mt-10 mx-auto max-h-screen">
+
+        <div>
+            <h1 class="w-full text-center font-bold text-3xl mb-10">The Life Map</h1>
+        </div>
 
         <div class="flex flex-row ">
 
             <div id="contents" class="flex flex-col md:flex-row lg:flex-row xl:flex-row">
 
-                <div class="fixed max-h-full inset-0 bg-black bg-opacity-80 justify-center items-center hidden z-100" id="toolbox-modal">
+                <div class="fixed max-h-full inset-0 bg-black bg-opacity-80 justify-center items-center hidden z-100"
+                    id="toolbox-modal">
                     <div class="w-4/5 bg-gray-200 text-gray-800 rounded shadow-xl">
                         <div id="modal-title"
                             class="py-4 px-5 xs:px-3 xs:mt-6 flex justify-between items-center text-3xl font-bold xs:text-base sm:text-base text-gray-800 border-b-1 border-gray-400">
@@ -50,44 +57,44 @@
                                     <img src="images/ToolBox.png" alt="">
                                     <div>
                                         <p>
-                                        What if everything you need to live a joyful life is already inside you?
+                                            What if everything you need to live a joyful life is already inside you?
 
-                                        You were born with a set of intuitive tools—a Toolbox for a Joyful Life—that
-                                        has
-                                        been guiding human connection, growth, and healing for generations. These
-                                        tools
-                                        are universal. Built-in. Available to everyone. I've never met anyone who
-                                        didn't
-                                        want to be more kind, more forgiving, more loving, more present. We all long
-                                        to
-                                        be these things, not just because they feel good, but because they are part
-                                        of
-                                        who we are.
-                                    </p>
-                                    <p>When we feel disconnected, anxious, or overwhelmed, it’s often because we’ve
-                                        forgotten what’s in this toolbox. But it’s still there, waiting. And when we
-                                        learn how to use it—when we act with communication, faith, empathy, and
-                                        sacrifice—our anxiety begins to melt away, and we return to a life of
-                                        productivity, peace, and purpose in the present moment.
-                                    </p>
-                                    <p>
-                                        This is what the Critical Understandings help us remember. They offer a set
-                                        of
-                                        12 simple, yet powerful ways of looking at life that can ground us, guide
-                                        us,
-                                        and help us make choices that bring us closer to who we truly are. This is
-                                        where
-                                        mindfulness begins—in the present moment, aware of our actions, feelings,
-                                        and
-                                        thoughts, without judgment.
-                                    </p>
+                                            You were born with a set of intuitive tools—a Toolbox for a Joyful Life—that
+                                            has
+                                            been guiding human connection, growth, and healing for generations. These
+                                            tools
+                                            are universal. Built-in. Available to everyone. I've never met anyone who
+                                            didn't
+                                            want to be more kind, more forgiving, more loving, more present. We all long
+                                            to
+                                            be these things, not just because they feel good, but because they are part
+                                            of
+                                            who we are.
+                                        </p>
+                                        <p>When we feel disconnected, anxious, or overwhelmed, it’s often because we’ve
+                                            forgotten what’s in this toolbox. But it’s still there, waiting. And when we
+                                            learn how to use it—when we act with communication, faith, empathy, and
+                                            sacrifice—our anxiety begins to melt away, and we return to a life of
+                                            productivity, peace, and purpose in the present moment.
+                                        </p>
+                                        <p>
+                                            This is what the Critical Understandings help us remember. They offer a set
+                                            of
+                                            12 simple, yet powerful ways of looking at life that can ground us, guide
+                                            us,
+                                            and help us make choices that bring us closer to who we truly are. This is
+                                            where
+                                            mindfulness begins—in the present moment, aware of our actions, feelings,
+                                            and
+                                            thoughts, without judgment.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="mt-3 py-4 px-5 xs:px-3 flex justify-end space-x-3">
                             <button type="button" name="btn-close" id="btn-close"
-                                class="btn-close px-3 py-1 bg-red-200 font-semibold shadow-lg rounded text-white hover:cursor-pointer hover:border-secondary hover:bg-secondary focus:outline-none">Close</button>
+                                class="btn-close px-3 py-1 border border-red-500 font-semibold shadow-lg rounded text-red-500 hover:cursor-pointer focus:outline-none">Close</button>
                         </div>
                     </div>
                 </div>
@@ -398,7 +405,8 @@
                             <li class="list-disc">Emotionally, we honor our relationships—beginning with ourselves, then
                                 extending to family, friends, and society—through sincerity and kindness.</li>
                             <li class="list-disc">Spiritually, we honor our inner guidance—our <button
-                                    id="toolboxforajoyfullife" class="underline">Toolbox for a Joyful Life</button> —by trusting and
+                                    id="toolboxforajoyfullife" class="underline">Toolbox for a Joyful Life</button> —by
+                                trusting and
                                 acknowledging the wisdom always available to us.</li>
                         </ul>
                         <br>
@@ -574,8 +582,6 @@
         $(function () {
 
             function closeallbut(get_text_id) {
-
-
                 switch (get_text_id) {
                     case 'txt_lm1_gifts':
 
@@ -721,7 +727,6 @@
 
                         break;
                 }
-
             }
 
             $('#img_lm3_manifestations').on('click', function () {
@@ -765,7 +770,7 @@
                 $('#toolbox-modal').toggleClass('hidden flex');
                 $('#map').toggleClass('flex hidden');
                 $('#map_text').toggleClass('flex hidden');
-                
+
             });
 
             $('#btn-close').on('click', function () {
